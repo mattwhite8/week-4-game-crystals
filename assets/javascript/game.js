@@ -23,11 +23,11 @@ $( document ).ready(function() {
   var losses = 0;
 
   function randomNumberToGet() {
-    return Math.floor(Math.random() * 100 + 1);
+    return Math.floor(Math.random() * (120 - 19) + 19);
   }
 
   function randomCrystalNumber() {
-    return Math.floor(Math.random() * 10 + 1);
+    return Math.floor(Math.random() * (12 - 1) + 1);
   }
 
   function setRandom() {
