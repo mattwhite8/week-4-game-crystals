@@ -1,7 +1,22 @@
-img {
-	height: 200px;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico');
 
 body {
-	background-image: url(../images/diamond.png);
+    background: linear-gradient(to right, #f598a8, #f6edb2) no-repeat center center fixed;
+}
+
+h1 {
+	font-family: 'Pacifico', cursive;
+}
+
+#logo {
+	height: 500px;
+	width: 555px;
+}
+
+#gem-logo {
+	position: absolute;
+    left: 205px;
+    top: 18px;
+    font-size: 72px;
+    color: white;
 }
