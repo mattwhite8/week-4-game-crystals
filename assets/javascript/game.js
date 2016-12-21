@@ -17,7 +17,7 @@ $( document ).ready(function() {
   }
 
   function setRandom() {
-    $("img").map(function(){
+    $(".gem").map(function(){
       $(this).data("number", randomCrystalNumber());
       console.log($(this).data());
     })
@@ -30,7 +30,7 @@ $( document ).ready(function() {
   
   setRandom();
   
-  $("img").click(function(){
+  $(".gem").click(function(){
     chime.get(0).play();
     score += $(this).data("number");
     $("#your-score").html(score);
