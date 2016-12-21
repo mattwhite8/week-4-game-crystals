@@ -15,6 +15,20 @@
         <img src="http://bestanimations.com/Money/Gems/sparkling-diamond-bling-animated-gif-21.gif" id="logo">
       </div>
     </div>
+    <div class="row text-center" >
+      <div class="col-md-4">
+         <h3>Number to match</h3>     
+         <h3 id="target">0</h3>
+      </div>
+      <div class="col-md-4">
+         <h3>Your score is...</h3>
+         <h3 id="your-score">0</h3>
+      </div>
+      <div class="col-md-4">
+         <h3 id="wins">Wins</h3>
+         <h3 id="losses">Losses</h3>
+      </div>
+    </div>
     <div class="row" id="gem-row">
       <div class="col-md-3">
         <img src="assets/images/blue_gem_1.png" class="img-responsive" id="img1">
@@ -29,37 +43,16 @@
         <img src="assets/images/red_gem_6.png" class="img-responsive" id="img4">
       </div>    
     </div>      
-    <div class="row">
-      <div class="col-md-8">
-         <div class="panel panel-default">
-           <div class="panel-heading">
-             <h3 class="panel-title">Number to match</h3>     
-           </div>
-           <div class="panel-body">
-             <h3 id="target">0</h3>
-           </div>
-         </div>
-      </div>
-      <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-body">
-        <h3 id="wins">Wins</h3>
-        <h3 id="losses">Losses</h3>
-      </div>
-    </div>
-   </div>
-    </div>
-    <div class="row">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Your score is...</h3>
-        </div>
-        <div class="panel-body">
-          <h3 id="your-score">0</h3>
-        </div>
-      </div>
-    </div>
   </div>
+<audio id="chime" src="assets/sounds/chime.wav"></audio>
+<script type="text/javascript">
+  myAudio = new Audio('assets/sounds/looper.wav'); 
+  myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+  }, false);
+  myAudio.play();
+</script>
 <script src="assets/javascript/game.js"></script>
 </body>
 </html>

@@ -1,26 +1,12 @@
-$( document ).ready(function() {
 
-// var crystalGame = {
-//   score: 0,
-//   wins: 0,
-//   losses: 0,
-//   randomNumberToGet: function(){
-//     return Math.floor(Math.random() * 100 + 1);
-//   },
-//   randomCrystalNumber: function(){
-//     return Math.floor(Math.random() * 10 + 1);
-//   },
-//   setRandom: function(){
-//     $("img").map(function(){
-//       $(this).data("number", crystalGame.randomCrystalNumber); 
-//       console.log($(this).data());
-//     })
-//   }
-// }
+
+$( document ).ready(function() {
 
   var score = 0;
   var wins = 0;
   var losses = 0;
+  const chime = $("#chime");
+
 
   function randomNumberToGet() {
     return Math.floor(Math.random() * (120 - 19) + 19);
@@ -45,6 +31,7 @@ $( document ).ready(function() {
   setRandom();
   
   $("img").click(function(){
+    chime.get(0).play();
     score += $(this).data("number");
     $("#your-score").html(score);
     console.log(score);
